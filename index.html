@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="for.css">
+    <title>CLÈ Education</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="logo"><img src="icon/logo3.png" alt="cle"></div>
+        <div class="title"><h2>ការសុំច្បាប់ឈប់សម្រាក</h2></div>
+        <div class="paragraph-intro">
+            <p><span>ការសុំច្បាប់ឈប់សម្រាក ៖</span> ផ្នែកគរុកោសល្យ និង​រៀបចំគ្រូជំនួស ផ្អែកតាមព័ត៌មានដែលលោកគ្រូអ្នកគ្រូ បញ្ជូនមក ដូចនេះសូមលោកគ្រូអ្នកគ្រូ បញ្ជូនព័ត៌មានមកផ្នែកគរុកោសល្យ ឲ្យបានមុន ២ ថ្ងៃ តាមរយៈតេឡេក្រាម ដូចខាងក្រោម៖</p>
+        </div>
+        <div class="back-form">
+            <form action="#" id="Form" class="forhide">
+                <div class="select_compu">
+                    <div class="input-room">
+                        <select name="compu" id="Compu" class="room" required>
+                            <option value="">Please select</option>
+                        </select>
+                        <label for="#">សាខា</label>
+                    </div>
+                </div>
+                <div class="all-date">
+                    <div class="date-from">
+                        <label for="#">ចាប់ពី</label>
+                        <input type="date" id="From" onchange="hendledatechange()" required>
+                    </div>
+                    <div class="date-to">
+                        <label for="#">ដល់</label>
+                        <input type="date" id="To" required>
+                    </div>
+                </div> 
+                <div class="value">
+                    <div class="input_value">
+                        <div class="input_name">
+                            <input type="text" required class="name" id="Name">
+                            <label for="#">ឈ្មោះគ្រូបង្រៀន</label>
+                        </div>
+                        <div class="input_time">
+                            <input type="text" required class="time" id="Time">
+                            <label for="#">ម៉ោងបង្រៀន</label>
+                        </div>
+                        <div class="input_student">
+                            <input type="text" required class="student" id="Student">
+                            <label for="#">ចំនួនសិស្ស</label>
+                        </div>
+                    </div>
+                    <div class="select_value">
+                        <div class="input-room">
+                            <select name="room" class="room" id="Room">
+                                <option value="">Please select</option>
+                            </select>
+                            <label for="#">បន្ទប់</label>
+                        </div>
+                        <div class="select">
+                            <select id="Language" required>
+                                <option value=""></option>
+                            </select>
+                            <label for="#">រៀនភាសា</label>
+                        </div>
+                        <div class="select_level">
+                            <div>
+                                <select class="left" id="Lavel" required></select>
+                                <label for="#">កម្រិតសិក្សា</label>
+                            </div>
+                            <div>
+                                <select class="right" id="Term" required></select>
+                                <label for="#">វគ្គសិក្សា</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <h5>មេរៀនដែលគ្រូជំនួសបង្រៀន ៖</h5>
+                <div class="unit">
+                    <div class="input-name">
+                        <input type="text" id="Newname">
+                        <label for="#">ឈ្មោះគ្រូជំនួស</label>
+                    </div>
+                    <div class="input-page">
+                        <input type="text"  id="Page">
+                        <label for="#">ទំព័រ</label>
+                    </div>
+                    <div class="input-dossier">
+                        <input type="text"  id="Dossier">
+                        <label for="#">ជំពូក</label>
+                    </div>
+                    <div class="input-document">
+                        <input type="text"  id="Document">
+                        <label for="#">មេរៀន</label>
+                    </div>
+                    <div class="input-act">
+                        <input type="text" id="Act">
+                        <label for="#">ចំណុច</label>
+                    </div>
+                </div>
+                <div class="note">
+                    <div class="reason-left"> 
+                        <h5>យោបល់ផ្សេងៗ របស់គ្រូទទួលបន្ទុក</h5> 
+                        <textarea id="Remark"></textarea>
+                    </div>
+                    <div class="reason-right">
+                        <h5>មូលហេតុ</h5>
+                        <textarea id="Reason"></textarea>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button onclick="hidebtn()" type="submit" id="MySubmit">Sumbit</button>
+                </div>
+            </form>
+        </div>
+        <div class="pp">
+            <p id="output1" class="p"></p>
+        </div>
+    </div>
+</body>
+    <script src="for.js"></script>
+</html>  
